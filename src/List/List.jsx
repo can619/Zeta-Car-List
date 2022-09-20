@@ -25,7 +25,7 @@ function List(){
 
     const cars = records.map(car =>{
        return (
-            <Car key={car.id} year={car.year} make={car.make} model={car.model} price={car.price} city={car.city} state={car.state} milage={car.milage} photo={car.primary_photo_url} color={car.display_color}/>            
+            <Car key={car.id} year={car.year} make={car.make} model={car.model} price={car.price} city={car.city} state={car.state} mileage={car.mileage} photo={car.primary_photo_url} color={car.display_color}/>            
        )
        })
     // title year price make model milage location/city/state  carThumbnailPic
