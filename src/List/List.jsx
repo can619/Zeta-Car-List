@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Car from '../Car/Car';
+import './List.css';
 
 function List(){
     const [records, setRecords] = useState([]);
@@ -22,13 +23,15 @@ function List(){
         fetchCars()
     },[])
 
-    const cars = records.map(car => {
-        <Car key={car.id} year={car.year} make={car.make} model={car.model} city={car.city} state={car.state} milage={car} />
-    })
+    const cars = records.map(car =>{
+       return (
+            <Car key={car.id} year={car.year} make={car.make} model={car.model} price={car.price} city={car.city} state={car.state} milage={car.milage} photo={car.primary_photo_url} color={car.display_color}/>            
+       )
+       })
     // title year price make model milage location/city/state  carThumbnailPic
     return (
-        <div>
-        {cars}
+        <div className='list'>
+            {cars}
         </div>
     )
 }

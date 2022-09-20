@@ -1,0 +1,29 @@
+.car{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.car-title-price{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    width:100%;
+
+}
+
+.car-price{
+    color: brown;
+    padding-left: 5%;
+}
+
+.car-year-make-model{
+    font-size: 200%;
+    font-weight: 500;
+    padding-right: 5%;
+}
