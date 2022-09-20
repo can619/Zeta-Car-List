@@ -1,14 +1,35 @@
 .car{
     border: 1px solid black;
-    /* display: flex;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    padding: 5%; */
+}
+
+.car-photo {
+    /* flex: 1; */
+
+  
+}
+
+img {
+    width: 35%;
+    height: 100%;
+}
+
+.car-details {
+    flex-grow:1;
+}
+
+.car-year-make-model{
+    border: 1px solid black;
+}
+
+/* .car-photo{
+    width: 50%;
+    height: 100%;
 }
 
 .car-title-price{
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: row; 
     justify-content: center;
@@ -26,4 +47,4 @@
     font-size: 200%;
     font-weight: 500;
     padding-right: 5%;
-}
+} */
