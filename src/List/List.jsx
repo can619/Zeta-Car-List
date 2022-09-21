@@ -1,18 +1,18 @@
 import { useState, useEffect } from 'react';
 import Car from '../Car/Car';
+import Page from '../Page/Page';
 import './List.css';
 
 function List(){
     const [records, setRecords] = useState([]);
-    const [city, setCity] = useState("Miami");
-    const [state, setState] = useState("FL")
+    const [page, setPage] = useState(4)
 
 
     useEffect(()=>{
 
         async function fetchCars(){
             try{
-                let url = `https://www.autolist.com/search?page=1&location=${city}%2C+FL&make=Jeep&ads=web`
+                let url = `https://www.autolist.com/search?page=${page}&location=Miami%2C+FL&make=Jeep&ads=web`
                 const response = await fetch(url)
                 const data = await response.json()
                 setRecords(data.records);
@@ -21,7 +21,17 @@ function List(){
             }
         }
         fetchCars()
-    },[])
+    },[page])
+
+ 
+    
+    function decrementPage(){
+        setPage(page -1)
+    }
+
+    function incrementPage(){
+        setPage(page + 1)
+    }
 
     const cars = records.map(car =>{
        return (
@@ -32,6 +42,7 @@ function List(){
     return (
         <div className='list'>
             {cars}
+            <Page page={page} decrementPage={decrementPage} incrementPage={incrementPage} />
         </div>
     )
 }
