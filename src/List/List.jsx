@@ -12,7 +12,7 @@ function List(){
 
         async function fetchCars(){
             try{
-                let url = `https://www.autolist.com/search?page=${page}&location=Miami%2C+FL&make=Jeep&ads=web`
+                let url = `https://www.autolist.com/search?page=${page}&location=Miami%2C+FL&make=Jeep`
                 const response = await fetch(url)
                 const data = await response.json()
                 setRecords(data.records);

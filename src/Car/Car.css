@@ -6,6 +6,7 @@
     padding: 1rem;
     width: 75%;
     height: 15rem;
+    /* height: 100%; */
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -39,7 +40,7 @@
 
 .car-milage {
     grid-area: m;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     position: absolute;
     left: 1.5rem;
     text-align: start;
@@ -53,12 +54,12 @@
 
 .car-estimate{
     grid-area: e;
-    font-size: 1.0rem;
+    font-size: 1.2rem;
 }
 
 .car-city-state {
     grid-area: l;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     position:absolute;
     left: 1.5rem;
     text-align: start;
@@ -67,12 +68,12 @@
 
 .car-track-price {
     grid-area: tp;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .car-availability {
     grid-area: a;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .car-availability:hover {
