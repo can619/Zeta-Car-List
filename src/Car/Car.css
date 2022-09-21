@@ -5,7 +5,8 @@
     align-items: center;
     padding: 1rem;
     width: 75%;
-    height: 15rem
+    height: 15rem;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 
@@ -49,12 +50,11 @@
     grid-area: p;
     font-weight: 700;
     font-size: 2rem;
-    padding: 1.1rem .7rem 1.1rem .7rem;
-
 }
 
 .car-estimate{
     grid-area: e;
+    font-size: 1.0rem;
 }
 
 .car-city-state {
@@ -68,12 +68,12 @@
 
 .car-track-price {
     grid-area: tp;
-
+    font-size: 1.2rem;
 }
 
 .car-availability {
     grid-area: a;
-
+    font-size: 1.2rem;
 }
 
 .car-availability:hover {
