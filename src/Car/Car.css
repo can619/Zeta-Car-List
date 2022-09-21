@@ -4,12 +4,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    width: 70%;
-    height: 50%
+    width: 75%;
+    height: 15rem
 }
 
 
 .car-details {
+    position:relative;
     height: 100%;
     flex-grow:1;
     display: grid;
@@ -28,17 +29,28 @@
     grid-area: t;
     font-weight: 700;
     font-size: 2rem;
+    width: 95%;
+    /* padding: 1.1rem 0rem 1.1rem .7rem; */
+    position:absolute;
+    left: 1.5rem;
+    text-align: start;
+
 }
 
 .car-milage {
     grid-area: m;
     font-size: 1.2rem;
+    position: absolute;
+    left: 1.5rem;
+    text-align: start;
 }
 
 .car-price{
     grid-area: p;
     font-weight: 700;
     font-size: 2rem;
+    padding: 1.1rem .7rem 1.1rem .7rem;
+
 }
 
 .car-estimate{
@@ -48,6 +60,10 @@
 .car-city-state {
     grid-area: l;
     font-size: 1.2rem;
+    position:absolute;
+    left: 1.5rem;
+    text-align: start;
+    padding-top: .7rem;
 }
 
 .car-track-price {
@@ -78,23 +94,22 @@ button {
 img {
     width: 100%;
     height: 100%;
-    /* position: absolute; */
-    /* z-index: -1; */
+    position: relative;
 }
 
 .car-heart-img {
     position: relative;
-    border: 1px solid black;
     width: 25%;
     height: 100%;
+    color: red;
 }
 
 .car-heart {
     position:absolute;
     top: 5px;
     right: 5px;
-    /* z-index: 1; */
-    /* add z index to have the heart ontop of the image*/
+    z-index: 1;
+
 }
 
 
