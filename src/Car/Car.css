@@ -75,20 +75,25 @@ button {
     color: rgb(232, 61, 61)
 }
 
-.car-photo {
-    width: 75%;
+img {
+    width: 100%;
     height: 100%;
+    /* position: absolute; */
+    /* z-index: -1; */
 }
 
 .car-heart-img {
     position: relative;
     border: 1px solid black;
+    width: 25%;
+    height: 100%;
 }
+
 .car-heart {
-    width: 150px;
     position:absolute;
     top: 5px;
     right: 5px;
+    /* z-index: 1; */
     /* add z index to have the heart ontop of the image*/
 }
 
