@@ -3,6 +3,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
+    width: 70%;
+    height: 50%
 }
 
 .car-photo {
@@ -12,39 +15,89 @@
 }
 
 img {
-    width: 35%;
+    width: 75%;
     height: 100%;
 }
 
 .car-details {
+    height: 100%;
     flex-grow:1;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 25% 25% 25% 25% ;
+    grid-template-areas: 
+    "t t t t t t t t p p p p"
+    "t t t t t t t t e e e e"
+    "m m m . . . . . . . . ."
+    "l l l l tp tp tp tp a a a a"
 }
 
 .car-year-make-model{
     border: 1px solid black;
+    grid-area: t;
+    font-weight: 700;
+    font-size: 2rem;
 }
 
-/* .car-photo{
-    width: 50%;
-    height: 100%;
-}
-
-.car-title-price{
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center;
-    width:100%;
-
+.car-milage {
+    grid-area: m;
+    font-size: 1.2rem;
 }
 
 .car-price{
-    color: brown;
-    padding-left: 5%;
+    grid-area: p;
+    font-weight: 700;
+    font-size: 2rem;
 }
 
-.car-year-make-model{
-    font-size: 200%;
-    font-weight: 500;
-    padding-right: 5%;
-} */
+.car-estimate{
+    grid-area: e;
+}
+
+.car-city-state {
+    grid-area: l;
+    font-size: 1.2rem;
+}
+
+.car-track-price {
+    grid-area: tp;
+
+}
+
+.car-availability {
+    grid-area: a;
+
+}
+
+.car-availability:hover {
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 40px;
+    color: white;
+}
+
+button {
+    border: none;
+    padding: 0;
+    background: none;
+    font-size: 1rem;
+    color: rgb(232, 61, 61)
+}
+
+.car-heart-img {
+    position: relative;
+    border: 1px solid black;
+}
+.car-heart {
+    width: 150px;
+    position:absolute;
+    top: 5px;
+    right: 5px;
+    /* add z index to have the heart ontop of the image*/
+}
+
+
+
+
+
