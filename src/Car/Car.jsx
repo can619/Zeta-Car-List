@@ -6,7 +6,7 @@ function Car({ year, make, model, price, city, state, mileage, photo, color }){
         <div className="car">
             <div className='car-heart-img'>
                 <AiOutlineHeart className='car-heart'/>
-                <img src={`${photo}`} alt={`${color} ${make} ${model}`}/>                 
+                <img className='car-photo' src={`${photo}`} alt={`${color} ${make} ${model}`}/>                 
             </div>
  
             <div className='car-details'>

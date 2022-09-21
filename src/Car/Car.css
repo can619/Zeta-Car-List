@@ -8,16 +8,6 @@
     height: 50%
 }
 
-.car-photo {
-    /* flex: 1; */
-
-  
-}
-
-img {
-    width: 75%;
-    height: 100%;
-}
 
 .car-details {
     height: 100%;
@@ -83,6 +73,11 @@ button {
     background: none;
     font-size: 1rem;
     color: rgb(232, 61, 61)
+}
+
+.car-photo {
+    width: 75%;
+    height: 100%;
 }
 
 .car-heart-img {
