@@ -26,7 +26,6 @@
 }
 
 .car-year-make-model{
-    border: 1px solid black;
     grid-area: t;
     font-weight: 700;
     font-size: 2rem;
